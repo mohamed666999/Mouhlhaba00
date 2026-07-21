@@ -3,13 +3,12 @@ import time
 import hashlib
 import hmac
 import json
-import os
 import requests
 
 app = FastAPI()
 
-API_KEY = os.getenv("Bld82CzzFzxIF65j4O")
-API_SECRET = os.getenv("jY435wiXMgBXpeKXscGg12iFCIJn62XlUHDr")
+API_KEY = "Bld82CzzFzxIF65j4O"
+API_SECRET = "jY435wiXMgBXpeKXscGg12iFCIJn62XlUHDr"
 
 BYBIT_URL = "https://api.bybit.com/v5/order/create"
 
