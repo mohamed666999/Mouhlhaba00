@@ -32,7 +32,7 @@ def trade(
     data: TradeRequest,
     authorization: str | None = Header(default=None)
 ):
-    if authorization != os.environ.get("WEBHOOK_TOKEN"):
+    if authorization != "Medmed345678.":
         raise HTTPException(status_code=401, detail="Unauthorized")
 
     action = data.action.upper()
